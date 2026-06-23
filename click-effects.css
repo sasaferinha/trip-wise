@@ -1,0 +1,30 @@
+/* Clique mais discreto */
+.ripple-wave {
+  width: 8px;
+  height: 8px;
+  margin: -4px;
+  background: rgba(255,255,255,.12);
+  animation-duration: .28s;
+}
+
+@keyframes rippleWave {
+  to {
+    transform: scale(8);
+    opacity: 0;
+  }
+}
+
+.btn:active {
+  transform: translateY(0) scale(.99);
+}
+
+.step:active {
+  transform: scale(.995);
+}
+
+.choice input:checked + span,
+.hotel-card.selected,
+.filter-chip.active,
+.modal-checklist label:has(input:checked) {
+  animation-duration: .08s;
+}
