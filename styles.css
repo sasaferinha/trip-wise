@@ -18,8 +18,6 @@ body { margin: 0; color: var(--text); background: var(--bg); font-family: "DM Sa
 button, input, select { font: inherit; }
 button { cursor: pointer; position:relative; isolation:isolate; }
 button > * { pointer-events:none; }
-.ripple-wave { position:absolute; z-index:-1; width:12px; height:12px; margin:-6px; border-radius:50%; background:rgba(255,255,255,.32); pointer-events:none; animation:rippleWave .58s ease-out forwards; }
-@keyframes rippleWave { to { transform:scale(28); opacity:0; } }
 .app-shell { min-height: 100vh; padding-bottom: 86px; }
 .topbar { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 5vw; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; background: rgba(10,13,12,.88); backdrop-filter: blur(20px); }
 .brand { display:flex; align-items:center; gap:10px; font: 800 20px/1 Manrope, sans-serif; letter-spacing:-.6px; color:white; border:0; background:none; }
@@ -46,7 +44,6 @@ h3 { font-size:17px; }
 .hero-actions { display:flex; gap:12px; margin:30px 0 42px; }
 .btn { border:1px solid transparent; border-radius:14px; padding:13px 18px; font-weight:800; display:inline-flex; align-items:center; justify-content:center; gap:9px; color:#07110d; background:var(--green); transition:transform .2s, filter .2s; }
 .btn:hover { transform:translateY(-2px); filter:brightness(1.05); }
-.btn:active { transform:translateY(0) scale(.96); }
 .btn.secondary { color:white; background:var(--surface-2); border-color:var(--line); }
 .btn.orange { background:var(--orange); }
 .btn.small { padding:10px 13px; border-radius:11px; font-size:13px; }
@@ -95,7 +92,6 @@ h3 { font-size:17px; }
 .step-list { display:grid; gap:10px; }
 .step { width:100%; color:white; text-align:left; display:flex; align-items:center; gap:12px; padding:13px; border-radius:14px; background:var(--surface-2); border:1px solid transparent; cursor:pointer; }
 .step:hover { border-color:var(--line); }
-.step:active { transform:scale(.98); }
 .step.is-complete { border-color:rgba(98,230,165,.16); background:linear-gradient(110deg,rgba(98,230,165,.09),var(--surface-2) 65%); }
 .step.is-complete .step-icon { color:var(--green); background:var(--green-dark); }
 .step-icon { width:36px; height:36px; border-radius:11px; display:grid; place-items:center; background:var(--surface-3); color:var(--muted); }
