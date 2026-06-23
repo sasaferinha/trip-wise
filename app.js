@@ -128,4 +128,4 @@ function bind(){
 }
 window.addEventListener('hashchange',render);
 render();
-document.addEventListener('pointerdown',e=>{const button=e.target.closest('button');if(!button||button.classList.contains('modal-backdrop'))return;const r=button.getBoundingClientRect(),wave=document.createElement('i');wave.className='ripple-wave';wave.style.left=`${e.clientX-r.left}px`;wave.style.top=`${e.clientY-r.top}px`;button.appendChild(wave);setTimeout(()=>wave.remove(),620);});
+
