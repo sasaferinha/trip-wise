@@ -1,0 +1,135 @@
+.profile-memory,
+.ai-plan-card,
+.smart-kpis {
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.025));
+  border-radius: 22px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.22);
+}
+
+.profile-memory {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  margin: 16px 0;
+}
+
+.profile-memory span,
+.ai-plan-top span,
+.smart-kpis small,
+.confidence-note {
+  color: rgba(255,255,255,.62);
+  font-size: .82rem;
+}
+
+.profile-memory b {
+  font-size: 1.05rem;
+}
+
+.profile-memory small {
+  color: rgba(255,255,255,.68);
+  line-height: 1.35;
+}
+
+.ai-plan-card {
+  margin-top: 14px;
+  padding: 16px;
+}
+
+.ai-plan-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.ai-plan-top b {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.1);
+  font-size: .78rem;
+}
+
+.ai-plan-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+}
+
+.ai-plan-grid,
+.smart-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.ai-plan-grid span,
+.smart-kpis div {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(0,0,0,.18);
+}
+
+.ai-plan-grid small,
+.smart-kpis small {
+  display: block;
+}
+
+.ai-plan-grid strong,
+.smart-kpis strong {
+  font-size: .95rem;
+}
+
+.expense-list.compact {
+  margin-top: 14px;
+}
+
+.smart-list {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,.78);
+}
+
+.smart-list li {
+  line-height: 1.35;
+}
+
+.confidence-note {
+  margin: 14px 0 0;
+  line-height: 1.45;
+}
+
+.smart-report .report-total strong {
+  letter-spacing: -0.04em;
+}
+
+.smart-kpis {
+  padding: 10px;
+  margin: 16px 0;
+}
+
+.budget-meter {
+  overflow: hidden;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.1);
+}
+
+.budget-meter span {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ff7a1a, #ff2323);
+}
+
+@media (max-width: 720px) {
+  .ai-plan-grid,
+  .smart-kpis {
+    grid-template-columns: 1fr;
+  }
+}
