@@ -19,3 +19,7 @@ Depois, abra `http://127.0.0.1:4173`.
 - Feed social com curtidas e roteiros salvos
 - Perfil do viajante, estatísticas e conquistas
 - Layout mobile-first com adaptação para desktop
+
+## Evolução Trip AI
+
+A branch `trip-ai-intelligence` adiciona uma base para a Trip AI evoluir de chatbot simples para consultor de viagem: orçamento, roteiro, comparação, checklist, perfil e níveis de confiança.
