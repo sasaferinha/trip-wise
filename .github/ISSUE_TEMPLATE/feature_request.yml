@@ -1,0 +1,25 @@
+name: Sugerir uma melhoria
+description: Proponha uma melhoria para o planejamento de viagens no Tripwise.
+title: "[Melhoria]: "
+body:
+  - type: textarea
+    id: problema-beneficio
+    attributes:
+      label: Problema e benefício
+      description: O que você tenta fazer no planejamento da viagem? Explique a dificuldade e quem se beneficiaria da melhoria.
+    validations:
+      required: true
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Solução sugerida
+      description: Descreva como a funcionalidade deveria funcionar. Um exemplo com dados fictícios ajuda.
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas (opcional)
+      description: Como você resolve isso hoje? Há outra forma de atender à mesma necessidade?
+    validations:
+      required: false
