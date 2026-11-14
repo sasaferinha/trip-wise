@@ -1,0 +1,56 @@
+name: Relatar um problema
+description: Informe um erro no planejamento, na interface ou nas integrações do Tripwise.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: ocorrido
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o erro e a parte do aplicativo afetada.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que deveria acontecer?
+      description: Explique o resultado esperado ao realizar essa ação.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: Use dados fictícios ao exemplificar uma viagem ou um orçamento.
+      placeholder: |
+        1. Abra a tela...
+        2. Preencha...
+        3. Clique em...
+        4. Observe...
+    validations:
+      required: true
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: Onde aconteceu?
+      options:
+        - Prévia estática local (node server.mjs)
+        - Ambiente com API
+        - Não sei
+    validations:
+      required: true
+  - type: input
+    id: navegador-dispositivo
+    attributes:
+      label: Navegador e dispositivo
+      description: Informe navegador, celular ou computador e sistema operacional. Inclua as versões, se souber.
+      placeholder: Chrome no Android; Safari no iPhone; Firefox no Windows.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Mensagens de erro ou logs (opcional)
+      description: Cole apenas o trecho relevante do console ou do servidor. Remova dados pessoais, chaves de API e tokens.
+      render: text
+    validations:
+      required: false

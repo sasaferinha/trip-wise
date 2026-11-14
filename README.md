@@ -41,3 +41,8 @@ Configure a chave da Trip AI no ambiente do servidor, sem incluí-la nos arquivo
 ## Evolução Trip AI
 
 A branch `trip-ai-intelligence` adiciona uma base para a Trip AI evoluir de chatbot simples para consultor de viagem: orçamento, roteiro, comparação, checklist, perfil e níveis de confiança.
+
+## Contribuir
+
+Veja o [guia de contribuição](CONTRIBUTING.md) para relatar problemas, propor melhorias e preparar um pull request. O repositório inclui formulários próprios para bugs e sugestões, além de um modelo para descrever e verificar as alterações.
+
